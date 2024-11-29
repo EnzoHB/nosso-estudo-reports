@@ -2,6 +2,8 @@
     import Logo from '$lib/logo.svelte';
 	import Report from '$lib/Report.svelte';
 
+	export const prerender = true
+
 	let { data } = $props();
 	let entries = JSON.parse(data.entries);
 

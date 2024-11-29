@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { base } from '$app/paths'
 
 
     let { entry, index } = $props();
@@ -100,7 +101,7 @@
             <div class='thing'>
                 <p class='name'>{titleCase(name)}</p>
                 <div style='display:flex; gap:8px'>
-                    <img src='/duration.png' width=16px height=16px alt=duration/>
+                    <img src='{base}/duration.png' width=16px height=16px alt=duration/>
                     <p class='duration'>{handleDuration(duration)}</p>
                 </div>
             </div>
